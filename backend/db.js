@@ -25,18 +25,18 @@ const Settings = mongoose.model("settings", settingsSchema);
 
 // Advanced schema define and Create model
 const advancedSchema = new mongoose.Schema({
-    minimap: Boolean,
-    squad: Boolean,
-    vehicles: Boolean,
-    balance: Boolean,
-    minimapS: Boolean,
-    hud: Boolean,
-    vehicleCam: Boolean,
-    regenrate: Boolean,
-    killcam: Boolean,
-    friendly: Boolean,
-    spotting: Boolean,
-    enmy: Boolean,
+    minimap: String,
+    squad: String,
+    vehicles: String,
+    balance: String,
+    minimapS: String,
+    hud: String,
+    vehicleCam: String,
+    regenrate: String,
+    killcam: String,
+    friendly: String,
+    spotting: String,
+    enmy: String,
 });
 
 const Advanced = mongoose.model("advanced", advancedSchema);
