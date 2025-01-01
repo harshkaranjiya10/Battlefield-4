@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 // Server-Info path
-app.use("api/v1/server-Info", mainRoute);
+app.use("/api/v1/server-Info", mainRoute);
 
 app.listen(5000, ()=>{
     console.log("http://localhost:5000");

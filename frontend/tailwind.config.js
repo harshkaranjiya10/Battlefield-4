@@ -8,6 +8,9 @@ export default {
     extend: {
       backgroundImage: {
         menu__background: "url('/menu__background.png')"
+      },
+      fontFamily: {
+        Rajdhani: ['Rajdhani', 'sans-serif'],
       }
     },
   },
