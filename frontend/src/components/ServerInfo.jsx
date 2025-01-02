@@ -76,9 +76,9 @@ export function ServerInfo() {
   ];
 
   return (
-    <>
+    <div className="flex flex-col px-10">
       {/* Browser Breadcrumb */}
-      <div className="absolute left-[131px] top-[36.26px] w-auto h-[85.06] font-Rajdhani font-semibold text-white flex flex-col justify-center">
+      <div className=" w-auto h-[85.06] font-Rajdhani font-semibold text-white flex flex-col pt-5 pb-10">
         <div className="flex text-[18px] w-auto h-[31px] leading-8">
           <div className="opacity-50 pr-[20px]">{"<"}</div>
           <div className="px-[10px]">MULTIPLAYER</div>
@@ -92,24 +92,21 @@ export function ServerInfo() {
       </div>
 
       {/* Server Info */}
-      <div>
-        
-      </div>
-      <div className="absolute top-[201.28px] left-[129.94px] w-[1162px] h-[145.73px] flex flex-col justify-between">
-        <div className="font-Rajdhani font-semibold text-[36px] w-auto text-white ">
+      <div className=" w-[1162px] md:w-[800px] h-auto flex flex-col pb-10">
+        <div className="font-Rajdhani font-semibold text-[36px] md:text-[20px] w-auto text-white ">
           #1| NASA | Noobs Welcome | Conquest 40Hz
         </div>
-        <div className="font-Rajdhani font-semibold opacity-80 w-auto text-[18px] leading-auto tracking-wider flex pt-[4px] text-white">
+        <div className="font-Rajdhani font-semibold opacity-80 w-auto text-[18px] md:text-[12px] leading-auto tracking-wider flex text-white">
           <img
             src="main__germany-flag.png"
-            width={"32px"}
-            height={"7.98px"}
+            width={"30px"}
+            height={"6.98px"}
             alt=""
             className="mr-2"
           />{" "}
           CONQUEST LARGE - SIEGE OF SHANGHAI - NORMAL - 40 HZ
         </div>
-        <div className="font-Rajdhani font-semibold w-auto opacity-80 text-[18px] leading-auto tracking-wider text-white pt-[4px]">
+        <div className="font-Rajdhani font-semibold w-auto opacity-80 text-[18px] md:text-[12px] leading-auto tracking-wider text-white">
           Server protected by The_K-50 AntiCheat. Vip !Rules, Questions,
           Request, Appeal, Visit us: www.epg.gg | Discord
           https://discord.gg/3r5NK4d
@@ -117,45 +114,45 @@ export function ServerInfo() {
       </div>
 
       {/* Buttons */}
-      <div className="absolute w-[1162px] h-[56px]  top-[380.54px] left-[131.36px] flex font-Rajdhani font-semibold text-white text-[18px]">
-        <div className="w-[324px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px]">
+      <div className="md:w-[1100px h-[56px] md:h-auto flex justify-between font-Rajdhani font-semibold text-white text-[18px] md:text-[15px] pb-5">
+        <div className="w-[324px] md:w-[280px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px] hover:text-black hover:bg-white">
           JOIN
         </div>
-        <div className="w-[324px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px]">
+        <div className="w-[324px] md:w-[280px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px]  hover:text-black hover:bg-white">
           SPECTATE
         </div>
-        <div className="w-[324px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px]">
+        <div className="w-[324px] md:w-[280px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center mr-[10px]  hover:text-black hover:bg-white">
           JOIN AS COMMANDER
         </div>
-        <div className="w-[166px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center">
+        <div className="w-[166px] md:w-[150px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center hover:text-black hover:bg-white">
           <img src="main__favorite.png" className="mr-[5px]" alt="" />
           13672
-        </div>
+        </div> 
       </div>
 
       {/* Current Stats */}
-      <div className="absolute w-[508.5px] h-[52.05px] top-[463.75px] left-[129.94px] flex font-Rajdhani font-semibold text-white justify-between tracking-widest">
+      <div className="w-[508.5px] md:w-[550px] h-auto flex font-Rajdhani font-semibold text-white justify-between tracking-widest pb-2">
         <div>
-          <div className="text-[18px]">PLAYERS</div>
-          <div className="text-[30px]">{stats[0].players}/64</div>
+          <div className="text-[18px] md:text-[12px]">PLAYERS</div>
+          <div className="text-[30px] md:text-[23px]">{stats[0].players}/64</div>
         </div>
         <div>
-          <div className="text-[18px]">PING</div>
-          <div className="text-[30px]">{stats[0].ping}ms</div>
+          <div className="text-[18px] md:text-[12px]">PING</div>
+          <div className="text-[30px] md:text-[23px]">{stats[0].ping}ms</div>
         </div>
         <div>
-          <div className="text-[18px]">TICKRATE</div>
-          <div className="text-[30px]">{stats[0].tickrate} HZ</div>
+          <div className="text-[18px] md:text-[12px]">TICKRATE</div>
+          <div className="text-[30px] md:text-[23px]">{stats[0].tickrate} HZ</div>
         </div>
       </div>
 
       {/* Settings, Advanced, Rules */}
-      <div className="absolute w-[1127px] left-[130px] top-[543.04px] flex font-Rajdhani text-white justify-between tracking-wide pt-[10px] pr-[5px] overflow-y-auto max-h-[calc(100vh-543px)]">
+      <div className="w-[1127px] md:w-[1000px] flex font-Rajdhani text-white justify-between tracking-wide pr-[5px] ">
         <InfoSection title="SETTINGS" data={settingData} />
         <InfoSection title="ADVANCED" data={advancedData} />
         <InfoSection title="RULES" data={rulesData} />
       </div>
-    </>
+    </div>
   );
 }
 
