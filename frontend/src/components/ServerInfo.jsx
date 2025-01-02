@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { IoIosStar } from "react-icons/io";
 
 // Reusable Component for displaying key-value pairs
 function InfoSection({ title, data }) {
@@ -125,8 +126,8 @@ export function ServerInfo() {
           JOIN AS COMMANDER
         </div>
         <div className="w-[166px] md:w-[150px] h-[56px] border-solid border-2 border-white border-opacity-20 flex justify-center items-center hover:text-black hover:bg-white">
-          <img src="main__favorite.png" className="mr-[5px]" alt="" />
-          13672
+          <IoIosStar className="mr-2 h-auto w-[20px]" />
+          13672 
         </div> 
       </div>
 
