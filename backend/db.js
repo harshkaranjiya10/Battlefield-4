@@ -1,6 +1,8 @@
 const mongoose =  require("mongoose");
+require('dotenv').config();
+const mongoDBURI = process.env.MONGODB_URI;
+mongoose.connect(mongoDBURI);
 
-mongoose.connect("mongodb+srv://harsh:harsh1010@cluster0.mima1.mongodb.net/FOG-Battlefield4");
 
 //Current Stats schema define and Create model
 const currentstatsSchema = new mongoose.Schema({
