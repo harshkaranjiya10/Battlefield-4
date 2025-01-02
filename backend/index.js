@@ -9,6 +9,10 @@ app.use(cors());
 // Server-Info path
 app.use("/api/v1/server-Info", mainRoute);
 
+app.get("/", (req,res) => {
+    res.send("Helloworld");
+})
+
 app.listen(5000, ()=>{
     console.log("http://localhost:5000");
 })
