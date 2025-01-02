@@ -26,7 +26,7 @@ export function ServerInfo() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/v1/server-Info");
+        const res = await axios.get("https://battlefield-4.vercel.app/api/v1/server-Info/");
         setData(res.data);
       } catch (error) {
         console.error("Error fetching server info:", error);
