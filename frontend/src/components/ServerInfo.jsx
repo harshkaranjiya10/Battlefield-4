@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { IoIosStar } from "react-icons/io";
+import { useScroll } from "motion/react"
 
 // Reusable Component for displaying key-value pairs
 function InfoSection({ title, data }) {
@@ -75,7 +76,7 @@ export function ServerInfo() {
     { label: "KICK AFTER IDLE", value: rules[0].kickI },
     { label: "BAN AFTER KICKS", value: rules[0].ban },
   ];
-
+  
   return (
     <div className="flex flex-col px-10">
       {/* Browser Breadcrumb */}
@@ -93,6 +94,8 @@ export function ServerInfo() {
       </div>
 
       {/* Server Info */}
+      <div className="overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-400">
+        
       <div className=" w-[1162px] md:w-[800px] h-auto flex flex-col pb-10">
         <div className="font-Rajdhani font-semibold text-[36px] md:text-[20px] w-auto text-white ">
           #1| NASA | Noobs Welcome | Conquest 40Hz
@@ -153,6 +156,7 @@ export function ServerInfo() {
         <InfoSection title="ADVANCED" data={advancedData} />
         <InfoSection title="RULES" data={rulesData} />
       </div>
+    </div>
     </div>
   );
 }
